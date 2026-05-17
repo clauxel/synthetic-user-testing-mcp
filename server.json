@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "space.syntheticuserlab/syntheticuserlab-mcp",
+  "title": "SyntheticUser Lab MCP",
+  "description": "Paid remote MCP for synthetic user testing, UX validation, analytics, checkout, and readiness.",
+  "version": "0.1.0",
+  "websiteUrl": "https://syntheticuserlab.space/",
+  "icons": [
+    {
+      "src": "https://syntheticuserlab.space/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://syntheticuserlab.space/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token issued after checkout and MCP token claim.",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "Bearer <token>"
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "serverCardUrl": "https://syntheticuserlab.space/.well-known/mcp/server-card.json",
+      "accessModel": "paid_mcp_bearer_token"
+    }
+  }
+}
