@@ -1,0 +1,10 @@
+SyntheticUser Lab MCP
+
+Paid remote MCP for synthetic user testing, UX validation, analytics, checkout, and readiness.
+
+Website: https://syntheticuserlab.space/
+MCP endpoint: https://syntheticuserlab.space/mcp
+Server card: https://syntheticuserlab.space/.well-known/mcp/server-card.json
+Registry name: space.syntheticuserlab/syntheticuserlab-mcp
+Auth: Authorization: Bearer <token> after checkout and token claim.
+Boundary: read-only fixed tools for synthetic user research; no arbitrary shell, arbitrary SQL, deployment, deletion, or payment configuration tools.
